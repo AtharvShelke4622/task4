@@ -1,0 +1,108 @@
+.footer{
+    padding:3rem 8rem 3rem;
+    color: var(--white-color);
+  }
+  .footer-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap : 2rem;
+    width: 90%;
+  }
+  .footer-content .content-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    width: 30%;
+  }
+  .social-icons{
+    display: flex;
+    gap: 1rem;
+  }
+  .content-center{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 30%;
+  }
+  .content-right{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 30%;
+  }
+  .content-right ul li{
+    list-style: none;
+    color: var(--white-color);
+    font-size: 1.1rem;
+  }
+  .content-center ul li{
+    list-style: none;
+    color: var(--white-color);
+    font-size: 1.1rem;
+  }
+  .copiright{
+    margin: 2rem 0;
+    color: var(--white-color);
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  @media (max-width: 1024px) {
+    .footer {
+        padding: 2rem 4rem 2rem; /* Reduce padding */
+    }
+
+    .footer-content {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center; /* Center align content */
+        gap: 2rem; /* Add spacing between sections */
+    }
+
+    .footer-content .content-left, .content-center, .content-right {
+        width: 80%; /* Increase width for better fit */
+        text-align: center; /* Center-align text for smaller screens */
+    }
+
+    .social-icons {
+        justify-content: center; /* Center align social icons */
+    }
+}
+
+/* Mobile devices (768px to 480px) */
+@media (max-width: 768px) {
+    .footer {
+        padding: 2rem 2rem; /* Compact padding */
+    }
+
+    .footer-content .content-left, .content-center, .content-right {
+        width: 100%; /* Use full width */
+    }
+
+    .copiright {
+        font-size: 1rem; /* Reduce copyright text size */
+    }
+}
+
+/* Small screens (less than 480px) */
+@media (max-width: 480px) {
+    .footer {
+        padding: 1.5rem 1rem; /* Minimal padding for small screens */
+    }
+
+    .footer-content {
+        gap: 1rem; /* Less gap for tighter layout */
+    }
+
+    .footer-content .content-left, .content-center, .content-right {
+        gap: 1rem;
+    }
+
+    .content-right ul li, .content-center ul li {
+        font-size: 1rem; /* Smaller text size */
+    }
+
+    .copiright {
+        font-size: 0.9rem; /* Compact copyright text */
+    }
+}

@@ -1,0 +1,112 @@
+.details {
+    background-color: rgb(3, 3, 53);
+    width: 90%;
+    height: 140px;
+    margin: 20px auto 40px auto; /* Center align */
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    align-items: center; /* Vertically align items */
+  }
+  
+  .details_container {
+    display: flex;
+    justify-content: space-around; /* Evenly space items */
+    flex-wrap: wrap; /* Enable wrapping for responsiveness */
+    width: 100%;
+    padding: 0 40px;
+  }
+  
+  .details_list {
+    display: flex;
+    gap: 10px;
+    align-items: center; /* Vertically align icon and text */
+  }
+  
+  .details_icon {
+    font-size: 70px; /* Adjusted for better scaling */
+  }
+  
+  .detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  h2 {
+    font-size: 28px;
+    margin: 0;
+  }
+  
+  .detail p {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+ 
+  /* Tablets (1024px to 768px) */
+@media (max-width: 1024px) {
+  .details {
+      height: 120px; /* Reduce height for tablets */
+  }
+
+  .details_icon {
+      font-size: 60px; /* Scale down icons */
+  }
+
+  h2 {
+      font-size: 24px; /* Adjust heading size */
+  }
+
+  .detail p {
+      font-size: 14px; /* Smaller text for better fit */
+  }
+}
+
+/* Mobile devices (768px to 480px) */
+@media (max-width: 768px) {
+  .details {
+      flex-direction: column; /* Stack items vertically */
+      height: auto; /* Allow height to adjust */
+      padding: 20px; /* Add some padding for spacing */
+  }
+
+  .details_container {
+      flex-direction: column; /* Stack detail items */
+      align-items: center; /* Center items */
+      padding: 0;
+      gap: 20px; /* Add spacing between items */
+  }
+
+  .details_icon {
+      font-size: 50px; /* Further scale down icons */
+  }
+
+  h2 {
+      font-size: 22px; /* Adjust heading size */
+  }
+
+  .detail p {
+      font-size: 13px; /* Smaller text for mobile */
+  }
+}
+
+/* Small screens (less than 480px) */
+@media (max-width: 480px) {
+  .details {
+      padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .details_icon {
+      font-size: 40px; /* Compact icon size */
+  }
+
+  h2 {
+      font-size: 18px; /* Smaller heading size */
+  }
+
+  .detail p {
+      font-size: 12px; /* Compact text size */
+  }
+}

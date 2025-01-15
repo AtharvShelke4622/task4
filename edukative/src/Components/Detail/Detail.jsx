@@ -1,0 +1,55 @@
+import React from 'react'
+import './Detail.css'
+import { BiBook, BiVideo } from 'react-icons/bi'
+import { GiTeacher } from 'react-icons/gi'
+import { FaCertificate } from 'react-icons/fa'
+
+const Detail = () => {
+  return (
+    <div>
+      <div className="details">
+        <div className="details_container">
+          <div className="details_list">
+            <div className="details_icon">
+              <BiVideo/>
+            </div>
+            <div className="detail">
+              <h2>2000+</h2>
+              <p>Video Courses</p>
+            </div>
+          </div>
+          <div className="details_list">
+            <div className="details_icon">
+              <BiBook/>
+            </div>
+            <div className="detail">
+              <h2>1000+</h2>
+              <p>E-Books</p>
+            </div>
+          </div>
+          <div className="details_list">
+            <div className="details_icon">
+              <GiTeacher/>
+            </div>
+            <div className="detail">
+              <h2>300+</h2>
+              <p>Expert Trainers</p>
+            </div>
+          </div>
+          <div className="details_list">
+            <div className="details_icon">
+              <FaCertificate/>
+            </div>
+            <div className="detail">
+              <h2>2000+</h2>
+              <p>certificates Issued</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  )
+}
+
+export default Detail

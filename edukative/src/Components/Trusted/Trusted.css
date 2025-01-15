@@ -1,0 +1,84 @@
+.trusted{
+    margin-top: 15rem;
+    display: grid;
+    place-items: center;
+    background-color: var(--primary-color);
+    }
+    .trusted-header{
+      font-size: 2.5rem;
+      color: white;
+      text-transform: capitalize;
+      text-align: center;
+    }
+    .trusted-img{
+      display: flex;
+      gap: 6rem;
+      margin-top: 2rem;
+    }
+    .trusted-img .logo{
+      width: auto;
+      height: 100px;
+    }
+    /* Tablets (1024px to 768px) */
+@media (max-width: 1024px) {
+  .trusted {
+      margin-top: 10rem; /* Reduce top margin */
+      padding: 2rem 4rem; /* Add padding for spacing */
+  }
+
+  .trusted-header {
+      font-size: 2rem; /* Reduce header font size */
+  }
+
+  .trusted-img {
+      gap: 4rem; /* Decrease gap between logos */
+      flex-wrap: wrap; /* Allow logos to wrap */
+      justify-content: center; /* Center-align logos */
+  }
+
+  .trusted-img .logo {
+      height: 80px; /* Scale logo height */
+  }
+}
+
+/* Mobile devices (768px to 480px) */
+@media (max-width: 768px) {
+  .trusted {
+      margin-top: 8rem; /* Further reduce top margin */
+      padding: 1.5rem 2rem; /* Compact padding */
+  }
+
+  .trusted-header {
+      font-size: 1.8rem; /* Smaller font size for header */
+      padding: 0 1rem; /* Add padding for better alignment */
+  }
+
+  .trusted-img {
+      gap: 2rem; /* Reduce gap further */
+  }
+
+  .trusted-img .logo {
+      height: 60px; /* Reduce logo size */
+  }
+}
+
+/* Small screens (<480px) */
+@media (max-width: 480px) {
+  .trusted {
+      margin-top: 5rem; /* Minimal margin for small screens */
+      padding: 1rem; /* Minimal padding */
+  }
+
+  .trusted-header {
+      font-size: 1.5rem; /* Compact header font size */
+  }
+
+  .trusted-img {
+      flex-direction: column; /* Stack logos vertically */
+      gap: 1rem; /* Small gap between logos */
+  }
+
+  .trusted-img .logo {
+      height: 50px; /* Smallest logo size */
+  }
+}

@@ -1,0 +1,153 @@
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 8rem;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    height: 80px;
+}
+
+.navigation .nav-header{
+    display: flex;
+    gap: 1rem;
+}
+.nav-header .logo{
+  color: var(--white-color);
+  font-size: 1.8rem;
+}
+.nav-header .nav-logo{
+  font-size: 2rem;
+  color: var(--white-color);
+ 
+}
+.nav-header .nav-logo span{
+   color: var(--background-dark-color);
+}
+
+.links ul{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.links ul li{
+    color: var(--white-color);
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.5rem 0;
+    cursor: pointer;
+}
+.links ul li:hover{
+    color: var(--background-dark-color);
+
+}
+.nav-button{
+    display: flex;
+    gap: 1rem;
+}
+.nav-button button{
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    width: 6rem;
+}
+.nav-button button:nth-child(2){
+    border: 1px solid var(--background-dark-color);
+    color: var(--white-color);
+    background-color: var(--background-dark-color);
+}
+.nav-button button:nth-child(2):hover{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+}
+.nav-button button:hover{
+    background-color: var(--background-dark-color);
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+}
+/* Tablets (1024px to 768px) */
+@media (max-width: 1024px) {
+    .navigation {
+        padding-inline: 4rem; /* Reduce horizontal padding */
+        height: 70px; /* Adjust height */
+    }
+
+    .nav-header .logo, .nav-header .nav-logo {
+        font-size: 1.5rem; /* Reduce logo size */
+    }
+
+    .links ul {
+        gap: 1.5rem; /* Decrease gap between links */
+    }
+
+    .links ul li {
+        font-size: 0.9rem; /* Adjust font size */
+    }
+
+    .nav-button button {
+        padding: 0.4rem 0.8rem; /* Compact button size */
+        font-size: 0.9rem; /* Adjust font size */
+        width: auto; /* Allow buttons to adjust dynamically */
+    }
+}
+
+/* Mobile devices (768px to 480px) */
+@media (max-width: 768px) {
+    .navigation {
+        flex-direction: column; /* Stack items vertically */
+        padding-inline: 2rem; /* Further reduce padding */
+        height: auto; /* Adjust height */
+    }
+
+    .nav-header {
+        justify-content: center; /* Center the header */
+    }
+
+    .links ul {
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center-align links */
+        gap: 1rem; /* Add vertical gap */
+    }
+
+    .nav-button {
+        justify-content: center; /* Center-align buttons */
+    }
+
+    .nav-button button {
+        padding: 0.3rem 0.6rem; /* Compact padding */
+        font-size: 0.8rem; /* Smaller font size */
+        width: 5rem; /* Standardize button width */
+    }
+}
+
+/* Small screens (<480px) */
+@media (max-width: 480px) {
+    .navigation {
+        padding-inline: 1rem; /* Minimal padding */
+    }
+
+    .nav-header .logo, .nav-header .nav-logo {
+        font-size: 1.2rem; /* Further reduce logo size */
+    }
+
+    .links ul {
+        gap: 0.8rem; /* Tighten link spacing */
+    }
+
+    .links ul li {
+        font-size: 0.8rem; /* Compact link text */
+    }
+
+    .nav-button button {
+        padding: 0.2rem 0.4rem; /* Minimal button padding */
+        font-size: 0.7rem; /* Smallest button font */
+    }
+}
