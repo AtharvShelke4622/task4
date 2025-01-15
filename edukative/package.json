@@ -3,12 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://AtharvShelke4622.github.io/task4"
+  "homepage": "https://<username>.github.io/edukative",  // Add this line
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",  // Add this line
+    "deploy": "gh-pages -d dist"  // Add this line
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -29,3 +31,4 @@
     "vite": "^6.0.5"
   }
 }
+
